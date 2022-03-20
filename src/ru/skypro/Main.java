@@ -5,14 +5,15 @@ public class Main {
     public static void main(String[] args) {
         // Задача 4
         char[]reverseFullName={'n','a','v','I',' ','v','o','n','a','v','I'};
-        int size=reverseFullName.length;
-        for(int i=0;i<size /2;i++){
-            int temp=reverseFullName[i];
-            reverseFullName[i]=reverseFullName[size-1-i];
-            reverseFullName[size-1-i]=(char)temp;
+        int length = 0;
+        for (int element : reverseFullName)
+        {
+            length++;
         }
-        System.out.println(" ");
-        System.out.println(Arrays.toString(reverseFullName));
+        for (int i = length - 1; i >= 0; i--)
+        {
+            System.out.print(reverseFullName[i]);
+        }
 
         System.out.println();
 
