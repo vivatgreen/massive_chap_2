@@ -6,12 +6,8 @@ public class Main {
         // Задача 4
         char[]reverseFullName={'n','a','v','I',' ','v','o','n','a','v','I'};
         int length = 0;
-        for (int element : reverseFullName)
-        {
-            length++;
-        }
-        for (int i = length - 1; i >= 0; i--)
-        {
+        for (int ignored : reverseFullName) length++;
+        for (int i = length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
 
