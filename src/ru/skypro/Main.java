@@ -1,7 +1,9 @@
 package ru.skypro;
 import java.util.Arrays;
 public class Main {
+
     int[] arr = generateRandomArray();
+
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
